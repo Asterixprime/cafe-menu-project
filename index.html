@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Café</h1>
+    </header>
+
+    <section class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <h3>Coffee</h3>
+                <p>₹50</p>
+                <label>Quantity: <input type="number" min="0" value="0" data-price="50" class="quantity"></label>
+            </div>
+            <div class="menu-item">
+                <h3>Tea</h3>
+                <p>₹30</p>
+                <label>Quantity: <input type="number" min="0" value="0" data-price="30" class="quantity"></label>
+            </div>
+            <div class="menu-item">
+                <h3>Sandwich</h3>
+                <p>₹80</p>
+                <label>Quantity: <input type="number" min="0" value="0" data-price="80" class="quantity"></label>
+            </div>
+            <div class="menu-item">
+                <h3>Burger</h3>
+                <p>₹100</p>
+                <label>Quantity: <input type="number" min="0" value="0" data-price="100" class="quantity"></label>
+            </div>
+            <div class="menu-item">
+                <h3>Pasta</h3>
+                <p>₹120</p>
+                <label>Quantity: <input type="number" min="0" value="0" data-price="120" class="quantity"></label>
+            </div>
+            <div class="menu-item">
+                <h3>Cake</h3>
+                <p>₹60</p>
+                <label>Quantity: <input type="number" min="0" value="0" data-price="60" class="quantity"></label>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-section">
+        <h2>Your Order</h2>
+        <button id="calculate">Calculate Bill</button>
+        <div id="bill-details" class="hidden">
+            <h3>Total Bill: ₹<span id="total-bill">0</span></h3>
+        </div>
+    </section>
+
+    <footer>
+        <p>Thank you for visiting our café!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
